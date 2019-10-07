@@ -1,0 +1,8 @@
+<h1>우와 너무 신난다</h1>
+{% for board in boards.all %}
+    <div class="container">
+        <h1>{{ board.title }}</h1>
+        <p>{{ board.pub_date }}</p>
+        <p>{{ board.body }}</p>
+    </div>
+{% endfor %}
